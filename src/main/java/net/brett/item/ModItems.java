@@ -23,8 +23,8 @@ public class ModItems {
     public static void registerModItems() {
         ToolsAndArmor.LOGGER.info("registering Mod Items for" + ToolsAndArmor.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(DARK_PEARL);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register (FabricItemGroupEntries -> {
+            FabricItemGroupEntries.add(DARK_PEARL);
         });
      }
 }
