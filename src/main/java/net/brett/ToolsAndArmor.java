@@ -1,6 +1,7 @@
 package net.brett;
 
 import net.brett.block.ModBlocks;
+import net.brett.item.ModItemGroups;
 import net.brett.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,8 @@ public class ToolsAndArmor implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
