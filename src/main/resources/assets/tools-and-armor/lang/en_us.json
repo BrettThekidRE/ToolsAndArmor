@@ -8,7 +8,13 @@
 
 
 
+  "block.toolsandarmor.zircon_ore": "Zircon Ore",
+  "block.toolsandarmor.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.toolsandarmor.dark_pearl_block": "Dark Pearl Block",
+  "block.toolsandarmor.zircon_block": "Zircon Block",
 
 
-  "block.toolsandarmor.zircon_block": "Zircon Block"
+
+  "itemgroup.toolsandarmor.zircon_items": "Zircon Items",
+  "itemgroup.toolsandarmor.zircon_blocks": "Zircon Blocks"
 }

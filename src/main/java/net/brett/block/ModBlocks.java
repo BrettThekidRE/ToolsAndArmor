@@ -19,7 +19,24 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+
+    public static final Block DARK_PEARL_BLOCK = registerBlock("dark_pearl_block",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool().sounds(BlockSoundGroup.COPPER)));
+
+    public static final Block DEEPSLATE_ZIRCON_ORE = registerBlock("deepslate_zircon_ore",
+            new Block(AbstractBlock.Settings.create().strength(3f)
+                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
+
+    public static final Block ZIRCON_ORE = registerBlock("zircon_ore",
+            new Block(AbstractBlock.Settings.create().strength(2f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+
     private static Block registerBlock(String name, Block block) {
+         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(ToolsAndArmor.MOD_ID, name), block);
     }
     private static void registerBlockItem(String name, Block block) {
@@ -31,6 +48,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.ZIRCRON_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.DARK_PEARL_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.DEEPSLATE_ZIRCON_ORE);
+            fabricItemGroupEntries.add(ModBlocks.ZIRCON_ORE);
         });
     }
 }
